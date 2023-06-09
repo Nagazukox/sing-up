@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
-    <h1>Página de registro de usuario</h1>
+
+    <div class="container">
+        <div class="izquierda"><img src="NAGA.png" alt="logo"></div>
+        <div class="derecha">
+
+            <div class="titulo">
+                <h1>¡Esto no es un servicio real! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                    laboriosam obcaecati iusto id enim nostrum iste blanditiis ducimus.</h1>
+                <h1>Sabes que <i>quieres</i> esto.</h1>
+            </div>
+
+            <form action="" method="get">
+                <div class="formulario">
+                    <h1>¡Hagámoslo!</h1>
+
+                    <fieldset>
+                        <div class="form-group first-group">
+
+                            <label for="nombre">* NOMBRE</label>
+                            <input type="text" name="nombre" id="nombre" required minlength="2">
+
+                            <label for="email">* EMAIL</label>
+                            <input type="email" name="email" id="email" required minlength="4">
+
+                            <label for="contraseña">* CONTRASEÑA</label>
+                            <input type="password" name="contraseña" id="contraseña" required minlength="3">
+                        </div>
+
+                        <div class="form-group second-group">
+
+                            <label for="apellido">APELLIDO</label>
+                            <input type="text" name="apellido" id="apellido" minlength="2">
+
+                            <label for="phone">NÚMERO DE TELÉFONO</label>
+                            <input type="number" name="numero" id="numero" minlength="9" maxlength="9">
+
+                            <label for="confirmar_contraseña">* CONFIRMAR CONTRASEÑA</label>
+                            <input type="password" name="confirmar_contraseña" id="confirmar_contraseña" minlength="3" required>
+
+                        </div>
+
+                    </fieldset>
+
+                </div>
+
+                <div class="enviar">
+                    <button type="submit" class="buttonClass">Crear Cuenta</button>
+                    <p>¿Ya eres un usuario? <a href="#">Inicia sesión</a></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
 
 </body>
+
 </html>
